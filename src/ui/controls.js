@@ -17,7 +17,7 @@ class ControlsManager {
    */
   setupControlEvents(shadow, video) {
     this.setupDragHandler(shadow);
-    this.setupButtonHandlers(shadow);
+    this.setupButtonHandlers(shadow, video);
     this.setupSliderHandler(shadow, video);
     this.setupWheelHandler(shadow, video);
     this.setupClickPrevention(shadow);
@@ -61,17 +61,28 @@ class ControlsManager {
    * @param {ShadowRoot} shadow - Shadow root
    * @private
    */
-  setupButtonHandlers(shadow) {
+  setupButtonHandlers(shadow, video) {
     shadow.querySelectorAll('button').forEach((button) => {
       // Click handler
       button.addEventListener(
         'click',
         (e) => {
+          const directSpeed = button.dataset['speed'];
+          if (directSpeed !== undefined) {
+            this.actionHandler.adjustSpeed(video, Number.parseFloat(directSpeed), {
+              source: 'internal',
+            });
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+
           this.actionHandler.runAction(
-            e.target.dataset['action'],
-            this.config.getKeyBinding(e.target.dataset['action']),
+            button.dataset['action'],
+            this.config.getKeyBinding(button.dataset['action']),
             e
           );
+          e.preventDefault();
           e.stopPropagation();
         },
         true
