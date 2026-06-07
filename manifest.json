@@ -1,10 +1,10 @@
 {
-  "name": "Video Speed Controller",
-  "short_name": "videospeed",
+  "name": "Video Speed Controller+",
+  "short_name": "VSC Plus",
   "version": "0.0.0",
   "manifest_version": 3,
   "minimum_chrome_version": "111",
-  "description": "Speed up, slow down, advance and rewind HTML5 audio/video with shortcuts",
+  "description": "Control HTML5 audio/video speed with shortcuts, a slider, rewind/advance controls, and quick 1x reset.",
   "homepage_url": "https://github.com/igrigorik/videospeed",
   "icons": {
     "16": "assets/icons/icon16.png",
