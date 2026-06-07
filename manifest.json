@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "minimum_chrome_version": "111",
   "description": "Control HTML5 audio/video speed with shortcuts, a slider, rewind/advance controls, and quick 1x reset.",
-  "homepage_url": "https://github.com/igrigorik/videospeed",
+  "homepage_url": "https://github.com/manuelruff/videospeed",
   "icons": {
     "16": "assets/icons/icon16.png",
     "48": "assets/icons/icon48.png",

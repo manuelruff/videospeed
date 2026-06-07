@@ -1,8 +1,14 @@
-# [Install from Chrome Web Store][chrome-web-store-link]
+# Video Speed Controller+
 
-[![Chrome Web Store][chrome-web-store-version]][chrome-web-store-link] [![Chrome Web Store Users][chrome-web-store-users-badge]][chrome-web-store-link] [![Chrome Web Store Users][chrome-web-store-stars]][chrome-web-store-link]  
+Video Speed Controller+ is an independent fork of the open-source Video Speed
+Controller project by Ilya Grigorik. It is built from that original
+MIT-licensed codebase, with additional controls such as an inline speed slider
+and a quick 1x reset button.
 
-**Video Speed Controller** gives you fine-grained control over any HTML5 video
+This extension is not affiliated with, endorsed by, or published by the
+original Video Speed Controller developer.
+
+**Video Speed Controller+** gives you fine-grained control over any HTML5 video
 or audio element, on any site.
 
 ## The science of accelerated playback
@@ -25,13 +31,15 @@ HTML5 media elements expose a native playback rate API, but most players hide
 or artificially limit it. Speed adjustments should be effortless and frequent:
 we don't read at a fixed pace, and we shouldn't watch at one either.
 
-
 ## Features
 
 - **Universal** - works on any site with HTML5 media: YouTube, Netflix,
   Coursera, podcasts, local files, etc.
 - **Video and audio** - controls both `<video>` and `<audio>` elements.
 - **Fine-grained speed** - 0.07x to 16x in configurable increments.
+- **Inline speed slider** - adjust playback speed directly from the on-video
+  controller.
+- **Quick 1x reset** - return to normal playback speed with one button.
 - **Per-site speed rules** - set a default playback speed for specific domains
   (e.g., always 2x on lecture sites).
 - **Per-site disable** - turn off the controller on sites where you don't
@@ -69,10 +77,4 @@ for them to take effect.
 
 (MIT License) - Copyright (c) 2014 Ilya Grigorik
 
-[chrome-web-store-version]: https://img.shields.io/chrome-web-store/v/nffaoalbilbmmfgbnbgppjihopabppdk?label=Chrome%20Web%20Store
-[chrome-web-store-users-badge]: https://img.shields.io/chrome-web-store/users/nffaoalbilbmmfgbnbgppjihopabppdk
-[chrome-web-store-stars]: https://img.shields.io/chrome-web-store/stars/nffaoalbilbmmfgbnbgppjihopabppdk
-[github-release-badge]: https://img.shields.io/github/v/release/igrigorik/videospeed
-
-[chrome-web-store-link]: https://chromewebstore.google.com/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk
-[github-release-link]: https://github.com/igrigorik/videospeed/releases
+Original project: https://github.com/igrigorik/videospeed

@@ -960,7 +960,7 @@ async function handleImportFile(event) {
     }
 
     if (!imported || typeof imported !== 'object' || !Array.isArray(imported.keyBindings)) {
-      throw new Error('File does not look like a Video Speed Controller settings file');
+      throw new Error('File does not look like a Video Speed Controller+ settings file');
     }
 
     // Ensure config is initialized
@@ -1105,11 +1105,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // About and feedback button event listeners
   document.getElementById('about').addEventListener('click', () => {
-    window.open('https://github.com/igrigorik/videospeed');
+    window.open('https://github.com/manuelruff/videospeed');
   });
 
   document.getElementById('feedback').addEventListener('click', () => {
-    window.open('https://github.com/igrigorik/videospeed/issues');
+    window.open('https://github.com/manuelruff/videospeed/issues');
   });
 
   function eventCaller(event, className, funcName) {
